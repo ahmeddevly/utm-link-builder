@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>منشئ روابط UTM مجاني | اعرف زوارك جايين منين</title>
+<meta name="description" content="أداة مجانية لعمل روابط UTM لكل قناة نشر (فيسبوك، واتساب، إنستجرام، إيميل، QR). اعرف مصدر زوارك في GA4 بدون حملة إعلانية وبدون تسجيل.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0e1a2b">
+<meta property="og:type" content="website"><meta property="og:locale" content="ar_EG"><meta property="og:title" content="منشئ روابط UTM مجاني"><meta property="og:description" content="اعمل رابط مخصص لكل قناة نشر واعرف الناس جاية منين، بدون إعلان وبدون تسجيل.">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"منشئ روابط UTM المجاني","inLanguage":"ar","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"أداة مجانية لإنشاء روابط UTM لكل قناة نشر."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"لازم أكتب اسم حملة؟","acceptedAnswer":{"@type":"Answer","text":"لأ، اسم الحملة اختياري. اختار أماكن النشر بس وهتعرف المصدر."}},{"@type":"Question","name":"هل الأداة مجانية؟","acceptedAnswer":{"@type":"Answer","text":"أيوه، مجانية بالكامل وبدون تسجيل."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e1a2b;--bg:#eef1f6;--card:#fff;--line:#dbe1ea;--mut:#55627a;--pri:#2250ff;--priT:#fff;--soft:#e8edff;--c1:#2250ff;--c2:#0f9d6b;--c3:#c26a00;--c4:#7c3aed;--c5:#d61f7a;--ok:#0f9d6b;--warn:#b45309;--hero:#0e1a2b;--code:#f5f7fb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8eefb;--bg:#0a111d;--card:#121c2c;--line:#24324a;--mut:#9aa9c4;--pri:#5b82ff;--priT:#071026;--soft:#1a2745;--c1:#7c9bff;--c2:#3ed6a0;--c3:#f5a742;--c4:#b794f6;--c5:#f472b6;--ok:#3ed6a0;--warn:#f5a742;--hero:#060b14;--code:#0d1625;color-scheme:dark}}
+:root[data-theme="dark"]{--ink:#e8eefb;--bg:#0a111d;--card:#121c2c;--line:#24324a;--mut:#9aa9c4;--pri:#5b82ff;--priT:#071026;--soft:#1a2745;--c1:#7c9bff;--c2:#3ed6a0;--c3:#f5a742;--c4:#b794f6;--c5:#f472b6;--ok:#3ed6a0;--warn:#f5a742;--hero:#060b14;--code:#0d1625;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.8 "Readex Pro",Tahoma,sans-serif}
+.w{max-width:1100px;margin:auto;padding:0 16px}
+.hero{background:var(--hero);color:#eef3ff;padding:28px 0 36px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;margin-bottom:22px}
+.brand i{font-style:normal;background:var(--pri);color:var(--priT);border-radius:8px;padding:2px 10px;font-size:15px}
+h1{font-size:clamp(24px,4.6vw,38px);line-height:1.4;margin:0 0 10px;font-weight:600;max-width:22ch}
+.hero p{margin:0 0 20px;color:#b9c6e0;max-width:60ch}
+.ex{background:#ffffff12;border:1px solid #ffffff22;border-radius:10px;padding:12px 14px}
+.ex code{display:block;direction:ltr;text-align:left;font-size:14px;word-break:break-all}
+.lg{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:8px;font-size:13px;color:#b9c6e0}
+.lg b{font-weight:500}
+.p-source{color:var(--c1)}.p-medium{color:var(--c2)}.p-campaign{color:var(--c3)}.p-term{color:var(--c4)}.p-content{color:var(--c5)}
+.hero .p-source{color:#8fa8ff}.hero .p-medium{color:#4fe0ad}.hero .p-campaign{color:#ffb454}.hero .p-content{color:#ff8fc4}
+.store{background:var(--card);border-bottom:1px solid var(--line);font-size:14px}
+.store .w{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.store span{flex:1;min-width:240px;color:var(--mut)}
+.store strong{color:var(--ok)}.store.bad strong{color:var(--warn)}
+main{display:grid;gap:20px;padding:24px 16px;max-width:1100px;margin:auto}
+@media(min-width:920px){main{grid-template-columns:1.1fr .9fr;align-items:start}.out{position:sticky;top:16px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px}
+.card h2{font-size:18px;margin:0 0 4px;font-weight:600;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.n{background:var(--soft);color:var(--pri);width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:14px}
+.opt{font-size:12px;color:var(--mut);font-weight:400;background:var(--soft);border-radius:99px;padding:0 10px}
+.hint{font-size:14px;color:var(--mut);margin:0 0 12px}
+label{display:block;font-size:14px;font-weight:500;margin:10px 0 4px}
+input[type=text]{width:100%;font:inherit;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+input[type=text]:focus{outline:0;border-color:var(--pri);box-shadow:0 0 0 3px var(--soft)}
+.ltr{direction:ltr;text-align:left}
+.row2{display:grid;gap:0 12px;grid-template-columns:1fr 1fr}
+.msg{font-size:13px;margin-top:4px;color:var(--mut)}.msg.e{color:var(--warn)}
+.grp{margin:12px 0 0;font-size:13px;color:var(--mut);font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 14px;cursor:pointer;display:flex;gap:6px;align-items:center}
+.chip:hover{border-color:var(--pri)}
+.chip[aria-pressed=true]{background:var(--pri);border-color:var(--pri);color:var(--priT)}
+.chip:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--soft);outline-offset:2px;box-shadow:0 0 0 2px var(--pri)}
+.bar{display:flex;gap:8px;justify-content:space-between;align-items:center;margin-top:12px;font-size:14px;color:var(--mut)}
+.btn{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:9px;padding:6px 14px;cursor:pointer}
+.btn:hover{border-color:var(--pri)}
+.btn.pri{background:var(--pri);border-color:var(--pri);color:var(--priT);font-weight:500}
+.btn.sm{padding:3px 10px;font-size:13px}
+.sw{display:flex;gap:10px;align-items:center;margin-top:14px;font-size:14px;cursor:pointer}
+.sw input{width:18px;height:18px;accent-color:var(--pri)}
+details.more{margin-top:12px}
+.res{background:var(--code);border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px}
+.res h3{margin:0 0 6px;font-size:15px;font-weight:600;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.res code{display:block;direction:ltr;text-align:left;font-size:13px;word-break:break-all;line-height:1.7;margin-bottom:10px}
+.tg{font-size:12px;color:var(--mut);font-weight:400;direction:ltr}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.empty{background:var(--soft);border-radius:12px;padding:14px 16px;font-size:14px}
+.empty ul{margin:6px 0 0;padding-inline-start:20px}
+.hi{display:flex;gap:8px;align-items:center;padding:8px 0;border-top:1px solid var(--line);font-size:13px}
+.hi div{flex:1;min-width:0}.hi code{display:block;direction:ltr;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--mut)}
+#toast{position:fixed;inset-inline:0;bottom:calc(20px + env(safe-area-inset-bottom,0px));margin:auto;width:max-content;max-width:90%;background:var(--ink);color:var(--bg);padding:9px 18px;border-radius:99px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:9}
+#toast.on{opacity:1}
+.info{background:var(--card);border-top:1px solid var(--line);padding:40px 0 48px;content-visibility:auto;contain-intrinsic-size:1px 1600px}
+.info h2{font-size:26px;margin:0 0 6px;font-weight:600}
+.info h3{font-size:19px;margin:28px 0 10px;font-weight:600}
+.g2{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.t{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--bg)}
+.t b{display:block;direction:ltr;text-align:right;font-weight:600;margin-bottom:2px}
+.t p{margin:0;font-size:14.5px}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-bottom:8px;background:var(--bg)}
+summary{cursor:pointer;font-weight:500}
+details p{margin:8px 0 0;font-size:15px}
+footer{padding:20px 16px 30px;text-align:center;font-size:13px;color:var(--mut)}
+@media(max-width:560px){.row2{grid-template-columns:1fr}.hero{padding:20px 0 26px}.card{padding:14px}.acts .btn{flex:1;text-align:center}#allBar{position:sticky;bottom:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px;box-shadow:0 4px 16px #0003;z-index:5}}
+@media (prefers-reduced-motion:reduce){#toast{transition:none}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="w">
+<div class="brand"><i>UTM</i><span>منشئ الروابط المجاني</span></div>
+<h1>انشر رابطك في أي مكان وإنت عارف الناس جاية منين</h1>
+<p>اكتب رابط موقعك، واختار القنوات اللي هتنشر فيها، وخد لكل قناة رابط جاهز للنسخ. مش لازم حملة ولا إعلان، المصدر بس كفاية.</p>
+<div class="ex"><code id="ex"></code><div class="lg"><b class="p-source">المصدر: فين نشرت؟</b><b class="p-medium">الوسيط: نوع القناة</b><b class="p-content">الناشر (اختياري)</b><b class="p-campaign">الحملة (اختياري)</b></div></div>
+</div></header>
+
+<div class="store" id="store"><div class="w"><span id="stTxt"></span><button class="btn sm" id="clr" type="button">امسح بياناتي</button></div></div>
+
+<main>
+<section aria-label="بيانات الرابط">
+<div class="card"><h2><span class="n">1</span>رابط الموقع</h2><p class="hint">الصفحة اللي عايز الناس تدخلها.</p>
+<label for="url">الرابط</label><input type="text" id="url" class="ltr" placeholder="example.com" inputmode="url" autocomplete="off" spellcheck="false">
+<div class="msg" id="urlM"></div></div>
+
+<div class="card"><h2><span class="n">2</span>أماكن النشر</h2><p class="hint">اختار مكان أو أكتر. كل مكان هياخد رابط خاص بيه، وده كل اللي محتاجه عشان تعرف المصدر.</p>
+<div id="chs"></div>
+<div id="cust" hidden><label for="cs">المصدر (utm_source)</label><input type="text" id="cs" class="ltr" placeholder="مثال: partner_site" autocomplete="off">
+<label for="cm">الوسيط (utm_medium)</label><input type="text" id="cm" class="ltr" placeholder="مثال: referral" autocomplete="off"></div>
+<div class="bar"><span id="cnt"></span><span><button class="btn sm" id="all" type="button">اختار الكل</button> <button class="btn sm" id="none" type="button">إلغاء الكل</button></span></div></div>
+
+<div class="card"><h2><span class="n">3</span>مين بينشر؟ وليه؟ <span class="opt">اختياري</span></h2><p class="hint">سيبهم فاضيين لو مش محتاجهم، الرابط هيشتغل ويعرّفك المصدر بس.</p>
+<div class="row2"><div><label for="pub">اسم الناشر</label><input type="text" id="pub" placeholder="مثال: ahmed أو فرع_المعادي" autocomplete="off"><div class="msg" id="pubM"></div></div>
+<div><label for="camp">اسم الحملة</label><input type="text" id="camp" placeholder="مثال: عرض_رمضان" autocomplete="off"><div class="msg" id="campM"></div></div></div>
+<details class="more"><summary>خيارات متقدمة</summary>
+<label for="term">الكلمة المفتاحية (utm_term)</label><input type="text" id="term" class="ltr" autocomplete="off">
+<label for="cont">تمييز المحتوى (utm_content)</label><input type="text" id="cont" class="ltr" placeholder="مثال: video_1" autocomplete="off">
+<div class="msg">لو كتبت اسم ناشر وتمييز محتوى، هيتدمجوا في utm_content.</div></details>
+<label class="sw"><input type="checkbox" id="auto"><span>نظّف الأسماء تلقائيًا (حروف صغيرة، والمسافة تبقى _). مُستحسن يفضل شغال.</span></label></div>
+</section>
+
+<aside class="out" aria-label="النتيجة">
+<div class="card"><h2>الروابط الجاهزة <span class="tg" id="rc"></span></h2>
+<div id="res" aria-live="polite"></div>
+<div class="bar" id="allBar" hidden><span>انسخ كل الروابط مرة واحدة</span><button class="btn pri sm" id="copyAll" type="button">نسخ الكل</button></div></div>
+<div class="card"><h2>سجل الروابط المنسوخة</h2><p class="hint">بيتسجل هنا أي رابط تنسخه، ومحفوظ على جهازك.</p>
+<div id="hist"></div><div class="bar"><span id="hc"></span><button class="btn sm" id="clrH" type="button">مسح السجل</button></div></div>
+</aside>
+</main>
+
+<section class="info" id="info"><div class="w">
+<h2>معلومات وشرح المصطلحات</h2>
+<p class="hint">لو أول مرة تسمع عن UTM، اقرا الجزء ده الأول.</p>
+<h3>إيه الغرض من الأداة؟</h3>
+<p>لما تنشر نفس الرابط في فيسبوك وواتساب وإنستجرام وإيميل، أدوات التحليل بتشوف كل الزيارات كأنها جاية من نفس المكان. الأداة دي بتضيف علامات (UTM) لكل رابط، فتعرف كل قناة جابتلك كام زيارة. مناسبة لأي حد بينشر رابطه حتى لو عمره ما عمل إعلان.</p>
+<h3>إزاي تستخدمها؟</h3>
+<ol><li>اكتب رابط موقعك.</li><li>اختار القنوات اللي هتنشر فيها.</li><li>(اختياري) اكتب اسم الناشر أو الحملة.</li><li>انسخ رابط كل قناة وانشره في مكانه بس.</li><li>بعد كام يوم افتح GA4: التقارير ← اكتساب ← اكتساب الزيارات، وغيّر البُعد لـ «المصدر/الوسيط للجلسة».</li></ol>
+<h3>شرح المصطلحات</h3>
+<div class="g2">
+<div class="t"><b>UTM</b><p>كلمات بتتضاف في آخر الرابط عشان أدوات التحليل تعرف الزيارة جت منين. الزائر ما بيحسش بأي فرق.</p></div>
+<div class="t"><b>utm_source</b><p>المصدر: المكان اللي نشرت فيه، زي facebook أو whatsapp.</p></div>
+<div class="t"><b>utm_medium</b><p>الوسيط: نوع القناة، زي social أو email أو cpc أو offline.</p></div>
+<div class="t"><b>utm_campaign</b><p>اسم الحملة (اختياري). بيجمّع الروابط الخاصة بنفس الغرض.</p></div>
+<div class="t"><b>utm_content</b><p>هنا بنحط اسم الناشر أو تمييز النسخة، عشان تعرف مين أو أنهي نسخة جابت الزيارة.</p></div>
+<div class="t"><b>utm_term</b><p>الكلمة المفتاحية في إعلانات البحث.</p></div>
+<div class="t"><b>Direct</b><p>زيارة من غير مصدر معروف. كل ما قلّ ده، كان القياس أدق.</p></div>
+<div class="t"><b>GA4</b><p>Google Analytics 4، أداة مجانية بتعرض الزيارات وتفاصيلها.</p></div>
+<div class="t"><b>تنظيف الأسماء</b><p>تحويل الاسم لحروف صغيرة ومسافات لـ _ . لأن Facebook و facebook بيتحسبوا مصدرين مختلفين.</p></div>
+<div class="t"><b>localStorage</b><p>مساحة صغيرة في متصفحك بتحفظ فيها الأداة بياناتك على جهازك بس.</p></div>
+</div>
+<h3>قواعد تخلي أرقامك سليمة</h3>
+<ul><li>استخدم نفس الاسم لنفس القناة دايمًا.</li><li>ما تحطش روابط UTM على زراير جوا موقعك، لأنها بتمسح المصدر الحقيقي.</li><li>انشر كل رابط في مكانه المخصص بس.</li><li>جرّب الرابط وشوف «الوقت الفعلي» في GA4 قبل النشر.</li></ul>
+<h3>أسئلة شائعة</h3>
+<details><summary>لازم أكتب اسم حملة؟</summary><p>لأ. اختار أماكن النشر بس وهتعرف المصدر. اكتب حملة لما تحب تجمّع كذا رابط تحت غرض واحد.</p></details>
+<details><summary>إيه فايدة اسم الناشر؟</summary><p>لو أكتر من شخص أو فرع بينشروا نفس الرابط، تعرف مين جاب الزيارات. اكتب اسم أو كود مختصر.</p></details>
+<details><summary>هل الأداة مجانية؟</summary><p>أه، مجانية بالكامل ومن غير تسجيل.</p></details>
+<details><summary>بياناتي بتتحفظ فين؟</summary><p>في متصفحك على جهازك بس، ومفيش حاجة بتتبعت لأي سيرفر. لو مسحت بيانات المتصفح أو استخدمت نافذة خاصة هتتمسح.</p></details>
+<details><summary>لازم يكون عندي GA4؟</summary><p>أي أداة تحليل بتقرا UTM زي Plausible تنفع. من غيرها الروابط هتشتغل عادي لكن مش هتشوف المصادر.</p></details>
+<details><summary>الرابط الطويل شكله وحش؟</summary><p>اختصره بأي أداة اختصار. الـ UTM بيفضل شغال.</p></details>
+</div></section>
+<footer>أداة مجانية. كل المعالجة بتتم في متصفحك.</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const G={social:'سوشيال ميديا',msg:'رسائل وإيميل',paid:'إعلانات مدفوعة',off:'أوفلاين وغيره'};
+const CH=[
+['facebook','فيسبوك','social','facebook','social','📘'],['instagram','إنستجرام','social','instagram','social','📸'],['tiktok','تيك توك','social','tiktok','social','🎵'],
+['youtube','يوتيوب','social','youtube','social','▶️'],['x','X (تويتر)','social','x','social','✖️'],['linkedin','لينكدإن','social','linkedin','social','💼'],
+['whatsapp','واتساب','msg','whatsapp','social','💬'],['telegram','تيليجرام','msg','telegram','social','✈️'],['email','إيميل','msg','newsletter','email','✉️'],['sms','رسالة SMS','msg','sms','sms','📱'],
+['fbads','إعلان فيسبوك','paid','facebook','paid_social','💰'],['igads','إعلان إنستجرام','paid','instagram','paid_social','💰'],['ttads','إعلان تيك توك','paid','tiktok','paid_social','💰'],['gads','إعلان جوجل','paid','google','cpc','🔎'],
+['gbp','ملف جوجل التجاري','off','google_business','organic','📍'],['qr','QR كود','off','qr_code','offline','🔳'],['print','مطبوعات وفلايرز','off','print','offline','🖨️'],['custom','قناة تانية','off','','','➕']
+];
+const KEY='utmx:v1';
+const DEF={url:'',camp:'',pub:'',term:'',cont:'',auto:true,sel:[],cs:'',cm:'',hist:[]};
+let ok=true,last=0;
+try{localStorage.setItem('utmx:t','1');localStorage.removeItem('utmx:t')}catch(e){ok=false}
+function load(){const d=Object.assign({},DEF,{sel:[],hist:[]});if(!ok)return d;
+try{const r=JSON.parse(localStorage.getItem(KEY));if(r&&typeof r==='object'){
+['url','camp','pub','term','cont','cs','cm'].forEach(k=>{if(typeof r[k]==='string')d[k]=r[k].slice(0,500)});
+if(typeof r.auto==='boolean')d.auto=r.auto;
+if(Array.isArray(r.sel))d.sel=r.sel.filter(i=>CH.some(c=>c[0]===i));
+if(Array.isArray(r.hist))d.hist=r.hist.filter(h=>h&&typeof h.u==='string'&&typeof h.l==='string').slice(0,50)}}catch(e){}
+return d}
+let S=load();
+function save(){if(!ok)return;try{localStorage.setItem(KEY,JSON.stringify(S));last=Date.now()}catch(e){ok=false}status()}
+function status(){const b=$('#store');b.classList.toggle('bad',!ok);
+$('#stTxt').innerHTML=ok?'<strong>💾 الحفظ شغال.</strong> بياناتك وسجل روابطك بيتحفظوا تلقائيًا في متصفحك على جهازك بس، ومش بتتبعت لأي سيرفر.'+(last?' آخر حفظ: '+new Date(last).toLocaleTimeString('ar-EG',{hour:'2-digit',minute:'2-digit'}):''):'<strong>⚠️ الحفظ مش متاح.</strong> المتصفح بيمنع التخزين (ممكن بسبب نافذة خاصة)، فالبيانات هتفضل طول ما الصفحة مفتوحة بس.'}
+const cl=v=>{v=String(v||'').trim();if(!S.auto)return v;return v.toLowerCase().replace(/\s+/g,'_').replace(/[^\p{L}\p{N}_-]/gu,'').replace(/_+/g,'_')};
+function normUrl(r){r=String(r||'').trim();if(!r)return null;if(!/^[a-z][a-z0-9+.-]*:\/\//i.test(r))r='https://'+r;
+try{const u=new URL(r);if(!/^https?:$/.test(u.protocol))return null;if(!(/^[^\s.]+(\.[^\s.]+)+$/.test(u.hostname)||u.hostname==='localhost'))return null;return u}catch(e){return null}}
+function mk(base,src,med){const u=new URL(base.href);[...u.searchParams.keys()].forEach(k=>{if(k.toLowerCase().startsWith('utm_'))u.searchParams.delete(k)});
+u.searchParams.set('utm_source',src);u.searchParams.set('utm_medium',med);
+const cp=cl(S.camp),t=cl(S.term),c=[cl(S.pub),cl(S.cont)].filter(Boolean).join('_');
+if(cp)u.searchParams.set('utm_campaign',cp);if(t)u.searchParams.set('utm_term',t);if(c)u.searchParams.set('utm_content',c);return u.toString()}
+const col=s=>esc(s).replace(/(utm_(source|medium|campaign|term|content))=([^&#]*)/g,'<span class="p-$2">$1=$3</span>');
+const fmt=t=>{try{return new Date(t).toLocaleString('ar-EG',{dateStyle:'short',timeStyle:'short'})}catch(e){return''}};
+let toastT;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('on'),1800)}
+async function copy(t){try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(t);return true}}catch(e){}
+try{const a=document.createElement('textarea');a.value=t;a.setAttribute('readonly','');a.style.cssText='position:fixed;top:0;opacity:0';document.body.appendChild(a);a.select();const r=document.execCommand('copy');a.remove();return r}catch(e){return false}}
+async function doCopy(items){const ok2=await copy(items.map(i=>items.length>1?i.l+': '+i.u:i.u).join('\n'));
+if(!ok2){toast('النسخ مش متاح هنا، حدد الرابط وانسخه يدويًا');return}
+items.slice().reverse().forEach(i=>{S.hist=S.hist.filter(h=>h.u!==i.u);S.hist.unshift({u:i.u,l:i.l,t:Date.now()})});S.hist=S.hist.slice(0,50);save();hist();
+toast(items.length>1?'اتنسخ '+items.length+' روابط':'اتنسخ الرابط ✓')}
+let cur=[];
+function render(){
+const base=normUrl(S.url),miss=[];
+if(!base)miss.push(S.url.trim()?'الرابط مش مظبوط، اكتبه بالشكل example.com':'اكتب رابط موقعك');
+if(!S.sel.length)miss.push('اختار مكان نشر واحد على الأقل');
+$('#urlM').className='msg'+(S.url.trim()&&!base?' e':'');
+$('#urlM').textContent=S.url.trim()?(base?'هنستخدم: '+base.origin+(base.pathname==='/'?'':base.pathname):'الرابط مش مظبوط. مثال: example.com أو https://example.com/page'):'';
+const pc=cl(S.pub),cc=cl(S.camp);
+$('#pubM').textContent=pc&&pc!==S.pub.trim()?'هتتكتب كده: '+pc:'';
+$('#campM').textContent=cc&&cc!==S.camp.trim()?'هتتكتب كده: '+cc:'';
+document.querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',S.sel.includes(b.dataset.id)));
+$('#cust').hidden=!S.sel.includes('custom');
+$('#cnt').textContent='اخترت '+S.sel.length+' من '+CH.length;
+cur=[];const notes=[];
+if(!miss.length){CH.forEach(c=>{if(!S.sel.includes(c[0]))return;let s=c[3],m=c[4],l=c[1];
+if(c[0]==='custom'){s=cl(S.cs);m=cl(S.cm);l=s?'قناة: '+s:'قناة تانية';if(!s||!m){notes.push('في «قناة تانية» اكتب المصدر والوسيط');return}}
+cur.push({l,u:mk(base,s,m),s,m,e:c[5]})})}
+const r=$('#res');
+if(miss.length||!cur.length){r.innerHTML='<div class="empty">'+(miss.length?'عشان تظهر الروابط:':'لسه ناقص:')+'<ul>'+(miss.length?miss:notes).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div>'}
+else r.innerHTML=cur.map((c,i)=>'<div class="res"><h3><span>'+c.e+' '+esc(c.l)+'</span><span class="tg">'+esc(c.s)+' / '+esc(c.m)+'</span></h3><code>'+col(c.u)+'</code><div class="acts"><button class="btn pri sm" data-c="'+i+'" type="button">نسخ الرابط</button>'+(navigator.share?'<button class="btn sm" data-s="'+i+'" type="button">مشاركة</button>':'')+'<a class="btn sm" href="'+esc(c.u)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:none">تجربة الرابط</a></div></div>').join('')+(notes.length?'<div class="empty" style="margin-top:10px">'+esc(notes[0])+'</div>':'');
+$('#rc').textContent=cur.length?'('+cur.length+')':'';$('#allBar').hidden=cur.length<2}
+function hist(){const h=$('#hist');$('#hc').textContent=S.hist.length?S.hist.length+' رابط':'';
+h.innerHTML=S.hist.length?S.hist.map((x,i)=>'<div class="hi"><div><b>'+esc(x.l)+'</b> <span class="tg">'+esc(fmt(x.t))+'</span><code>'+esc(x.u)+'</code></div><button class="btn sm" data-h="'+i+'" type="button">نسخ</button><button class="btn sm" data-d="'+i+'" type="button" aria-label="حذف">✕</button></div>').join(''):'<div class="hint">لسه ما نسختش أي رابط.</div>'}
+function fill(){$('#url').value=S.url;$('#camp').value=S.camp;$('#pub').value=S.pub;$('#term').value=S.term;$('#cont').value=S.cont;$('#cs').value=S.cs;$('#cm').value=S.cm;$('#auto').checked=S.auto}
+$('#chs').innerHTML=Object.keys(G).map(g=>'<div class="grp">'+G[g]+'</div><div class="chips">'+CH.filter(c=>c[2]===g).map(c=>'<button class="chip" type="button" data-id="'+c[0]+'" aria-pressed="false">'+c[5]+' '+c[1]+'</button>').join('')+'</div>').join('');
+$('#ex').innerHTML=col('https://your-site.com/?utm_source=facebook&utm_medium=social&utm_content=ahmed');
+['url','camp','pub','term','cont','cs','cm'].forEach(k=>$('#'+k).addEventListener('input',e=>{S[k]=e.target.value;save();render()}));
+$('#auto').addEventListener('change',e=>{S.auto=e.target.checked;save();render()});
+$('#chs').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;const i=b.dataset.id;S.sel=S.sel.includes(i)?S.sel.filter(x=>x!==i):S.sel.concat(i);save();render()});
+$('#all').onclick=()=>{S.sel=CH.map(c=>c[0]);save();render()};
+$('#none').onclick=()=>{S.sel=[];save();render()};
+$('#res').addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(b)doCopy([cur[+b.dataset.c]]);const sh=e.target.closest('[data-s]');if(sh){const x=cur[+sh.dataset.s];navigator.share({url:x.u,title:x.l}).catch(()=>{})}});
+$('#copyAll').onclick=()=>{if(cur.length)doCopy(cur)};
+$('#hist').addEventListener('click',e=>{const c=e.target.closest('[data-h]'),d=e.target.closest('[data-d]');
+if(c){const x=S.hist[+c.dataset.h];if(x)copy(x.u).then(r=>toast(r?'اتنسخ الرابط ✓':'النسخ مش متاح هنا'))}
+if(d){S.hist.splice(+d.dataset.d,1);save();hist()}});
+$('#clrH').onclick=()=>{S.hist=[];save();hist()};
+let ct;$('#clr').onclick=function(){if(!this.dataset.s){this.dataset.s='1';this.textContent='اضغط تاني للتأكيد';ct=setTimeout(()=>{delete this.dataset.s;this.textContent='امسح بياناتي'},4000);return}
+clearTimeout(ct);delete this.dataset.s;this.textContent='امسح بياناتي';try{localStorage.removeItem(KEY)}catch(e){}
+S=Object.assign({},DEF,{sel:[],hist:[]});last=0;fill();render();hist();status();toast('اتمسحت كل بياناتك من الجهاز')};
+fill();render();hist();status();
+})();
+</script>
+</body>
+</html>
